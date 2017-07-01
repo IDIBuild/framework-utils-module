@@ -1,5 +1,5 @@
 export default function () {
-    return isString(input)
+    return angular.isString(input)
         ? input
             .split(' ')
             .map(function (ch) {
