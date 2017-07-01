@@ -3,7 +3,7 @@ export default function () {
 
         var sensitive = csensitive || false;
 
-        if(!isString(input) || isUndefined(start)) {
+        if(!angular.isString(input) || angular.isUndefined(start)) {
             return input;
         }
 

@@ -1,4 +1,4 @@
-export default  function (input) {
+export default function () {
     return isString(input)
         ? input
             .split(' ')

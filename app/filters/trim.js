@@ -4,7 +4,7 @@ export default function () {
 
         var trim = chars || '\\s';
 
-        return isString(input)
+        return angular.isString(input)
             ? input.replace(new RegExp('^' + trim + '+|' + trim + '+$', 'g'), '')
             : input;
     }
