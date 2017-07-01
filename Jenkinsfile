@@ -44,6 +44,7 @@ node {
              sh 'npm version patch'
              sh 'git push --tags'
              sh 'npm publish'
+             sh 'git push -f origin master'
         }
 
 
