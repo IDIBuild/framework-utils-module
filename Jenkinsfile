@@ -40,9 +40,9 @@ node {
 
 
         stage('Publish NPM snapshot') {
-             def currentVersion = sh(returnStdout: true, script: "npm version | grep \"{\" | tr -s ':'  | cut -d \"'\" -f 4").trim()
-             def newVersion = "${currentVersion}-${buildNumber}"
-              sh "npm version ${newVersion} --no-git-tag-version && npm publish --tag next"
+             sh 'git reset --hard'
+             sh 'npm version patch'
+             sh 'git push --tags'
         }
 
 
