@@ -43,7 +43,11 @@ node {
              sh 'git reset --hard'
              sh 'npm version patch'
              sh 'git push --tags'
-             sh 'npm publish'
+             sh 'cp package.json dist/'
+             dir ('dist') {
+                 sh 'npm publish'
+             }
+
              sh 'git push -f origin master'
         }
 
