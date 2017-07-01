@@ -24,14 +24,15 @@ node {
 
 
         stage('Build') {
-            print "Environment : ${env.NODE_ENV}"
-
             sh 'node -v'
             sh 'npm prune'
             sh 'npm install'
             sh 'npm run build'
-            archive .Artifacts artifacts: '*.tar.gz', fingerprint: true
+            archive Artifacts artifacts: '*.tar.gz', fingerprint: true
+
         }
+
+
 
 
         stage('Cleanup'){
