@@ -1,6 +1,8 @@
-let webpack = require('webpack')
-let ExtractTextPlugin = require('extract-text-webpack-plugin')
-let path = require('path')
+let webpack = require('webpack');
+let ExtractTextPlugin = require('extract-text-webpack-plugin');
+let path = require('path');
+let ArchivePlugin = require('webpack-archive-plugin');
+
 
 module.exports = {
   entry: {
@@ -16,7 +18,8 @@ module.exports = {
       filename: 'bundle.css',
       disable: false,
       allChunks: true
-    })
+    }),
+      new ArchivePlugin()
   ],
   module: {
     rules: [{
