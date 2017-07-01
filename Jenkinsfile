@@ -40,7 +40,7 @@ node {
 
 
         stage('Cleanup'){
-            echo 'prune and cleanup'
+            echo 'prune and cleanup all'
         }
 
     } catch (err) {
