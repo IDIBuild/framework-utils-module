@@ -1,4 +1,4 @@
-export default function () {
+export default  function (input) {
     return angular.isString(input)
         ? input
             .split(' ')
