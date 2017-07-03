@@ -47,7 +47,6 @@ node {
              dir ('dist') {
                  sh 'npm publish'
              }
-
              sh 'git push -f origin master'
         }
 
