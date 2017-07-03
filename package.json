@@ -1,6 +1,6 @@
 {
   "name": "framework-utils",
-  "version": "2.0.14",
+  "version": "2.0.15",
   "description": "Demo framework-utis ",
   "main": "framework-utils.bundle.js",
   "publishConfig": {
