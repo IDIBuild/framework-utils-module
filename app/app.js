@@ -6,6 +6,6 @@ let app = angular.module('idi-framework' ,[]);
 
 app.filter('trim',  TrimFilter);
 app.filter('startsWith',  StartWithFilter);
-app.filter('titleize',  UpperCaseFirstFilter1);
+app.filter('titleize',  UpperCaseFirstFilter);
 
 
